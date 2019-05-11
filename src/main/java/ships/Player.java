@@ -1,6 +1,14 @@
 package ships;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Player {
+    @Id
+    @GeneratedValue
     int id;
     String login;
     String password;
